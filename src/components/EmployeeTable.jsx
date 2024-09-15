@@ -65,13 +65,9 @@ const EmployeeTable = () => {
         </table>
       </div>
       <div className={styles.buttonContainer}>
-        <button onClick={handlePrevious} disabled={currentPage === 1}>
-          Previous
-        </button>
+        <button onClick={handlePrevious}>Previous</button>
         <button>{currentPage}</button>
-        <button onClick={handleNext} disabled={currentPage === totalPages}>
-          Next
-        </button>
+        <button onClick={handleNext}>Next</button>
       </div>
     </>
   );
